@@ -1,0 +1,18 @@
+package bai5_1;
+
+import java.time.LocalDate;
+
+public class HourlyEmployee extends Employee {
+	private int hourlyRate;
+	private int primaryHours;
+	public HourlyEmployee(String name, LocalDate hiredDate, int hourlyRate, int primaryHours) {
+		super(name, hiredDate);
+		this.hourlyRate = hourlyRate;
+		this.primaryHours = primaryHours;
+	}
+	
+	
+	
+	
+
+}

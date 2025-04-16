@@ -1,0 +1,54 @@
+package bt4_2;
+
+public class Bai4_2 {
+	 public static String customReplace(String s, String s1, String s2) {
+	        if (s == null || s1 == null || s2 == null || s1.length() == 0) {
+	            return s;
+	        }
+	        
+	        String result = "";
+	        int i = 0;
+	        
+	        while (i < s.length()) {
+	            // Kiểm tra xem tại vị trí i có chuỗi s1 không
+	            if (i <= s.length() - s1.length() && matchSubstring(s, i, s1)) {
+	                // Nếu tìm thấy s1, thêm s2 vào kết quả
+	                result += s2;
+	                // Di chuyển i đến sau chuỗi s1
+	                i += s1.length();
+	            } else {
+	                // Nếu không phải s1, thêm ký tự hiện tại vào kết quả
+	                result += s.charAt(i);
+	                i++;
+	            }
+	        }
+	        
+	        return result;
+	    }
+	    
+	    // Hàm kiểm tra xem chuỗi s có chứa chuỗi con pattern tại vị trí index không
+	    private static boolean matchSubstring(String s, int index, String pattern) {
+	        if (index + pattern.length() > s.length()) {
+	            return false;
+	        }
+	        
+	        for (int i = 0; i < pattern.length(); i++) {
+	            if (s.charAt(index + i) != pattern.charAt(i)) {
+	                return false;
+	            }
+	        }
+	        
+	        return true;
+	    }
+	    
+	    public static void main(String[] args) {
+	        // Ví dụ sử dụng
+	        String s = "hello java";
+	        String s1 = "hello";
+	        String s2 = "xin chao";
+	        
+	        String result = customReplace(s, s1, s2);
+	        System.out.println("Chuỗi ban đầu: " + s);
+	        System.out.println("Chuỗi sau khi thay thế: " + result);
+	    }
+}

@@ -1,0 +1,15 @@
+package bt4_2;
+
+public class Bai4_2 {
+	public static String repalce(String s1, String s, String s3) {
+		String res = "";
+		int i = 0;
+		while(i < s.length()) {
+			
+		}
+		return s3;
+		
+	}
+
+}
+	

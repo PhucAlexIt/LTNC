@@ -1,0 +1,6 @@
+package bai5_1;
+import java.time.LocalDate;
+public class Employee {
+	private String name;
+	private LocalDate hiredDate;
+}

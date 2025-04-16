@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+D:\ThuMucCuaTui\22130215_DangQuangMinhPhuc\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2725142083.index
+2768476762.index
+3580456661.index
+1259207542.index
+1007340512.index

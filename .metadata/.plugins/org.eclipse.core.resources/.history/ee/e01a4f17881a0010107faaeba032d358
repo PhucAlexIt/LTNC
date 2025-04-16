@@ -1,0 +1,27 @@
+package bai5_1;
+
+import java.time.LocalDate;
+
+public class Employee {
+	private String name;
+	private LocalDate hiredDate;
+
+	public Employee(String name, LocalDate hiredDate) {
+		super();
+		this.name = name;
+		this.hiredDate = hiredDate;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public LocalDate getHiredDate() {
+		return hiredDate;
+	}
+	
+	public boolean sameName(String otherName) {
+		return 
+		
+	}
+}

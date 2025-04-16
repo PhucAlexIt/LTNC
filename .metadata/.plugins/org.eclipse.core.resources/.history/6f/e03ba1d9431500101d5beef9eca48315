@@ -1,0 +1,26 @@
+package bt4_1;
+
+public class BT4_1 {
+	//1. Cho 2 chuỗi s và s1. Tìm vị trí đầu tiên chuỗi s1 xuất hiện trong chuỗi s. 
+	public static int findString(String s, String s1) {
+		int len_s = s.length();
+		int len_s1 = s.length();
+		
+			for (int i = 0; i < len_s-len_s1; i++) {
+				boolean match = true;
+				for (int j = 0; j < len_s1; j++) {
+					if (s.charAt(i + j) != s1.charAt(j)) {
+	                    match = false;
+	                    break;
+	                }
+	            }
+	            if (match) {
+	                return i;
+	            }
+	        }
+	        return -1;
+	    }
+				
+			
+	
+}

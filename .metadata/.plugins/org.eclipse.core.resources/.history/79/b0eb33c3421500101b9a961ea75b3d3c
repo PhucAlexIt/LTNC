@@ -1,0 +1,9 @@
+package bt4_1;
+
+public class BT4_1 {
+	//1. Cho 2 chuỗi s và s1. Tìm vị trí đầu tiên chuỗi s1 xuất hiện trong chuỗi s. 
+
+	public static int findString(String s, String s1) {
+		
+	}
+}

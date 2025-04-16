@@ -1,0 +1,7 @@
+package bai5_1;
+
+public class SalaryEmployee extends Employee {
+	private double annualSalary;
+	private int stockOption;
+
+}

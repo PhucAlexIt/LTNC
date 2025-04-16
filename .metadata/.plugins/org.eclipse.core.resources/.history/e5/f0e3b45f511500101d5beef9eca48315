@@ -1,0 +1,46 @@
+package bt4_2;
+
+public class Bai4_2 {
+	public static String replce(String s1, String s, String s2) {
+		 String result = "";
+	        int i = 0;
+
+	        while (i < s.length()) {
+	            boolean match = true;
+
+	            // Kiểm tra xem s1 có khớp với s bắt đầu từ vị trí i không
+	            if (i + s1.length() <= s.length()) {
+	                for (int j = 0; j < s1.length(); j++) {
+	                    if (s.charAt(i + j) != s1.charAt(j)) {
+	                        match = false;
+	                        break;
+	                    }
+	                }
+	            } else {
+	                match = false;
+	            }
+
+	            // Nếu khớp, thêm s2 vào result
+	            if (match) {
+	                result = result + s2;
+	                i += s1.length(); // bỏ qua đoạn s1
+	            } else {
+	                result = result + s.charAt(i); // thêm từng ký tự
+	                i++;
+	            }
+	        }
+
+	        return result;
+	    }
+	   public static void main(String[] args) {
+	        String s = "abababcab";
+	        String s1 = "ab";
+	        String s2 = "xy";
+
+	        String replaced = replace(s, s1, s2);
+	        System.out.println("Chuỗi sau khi thay thế: " + replaced);
+	    }
+	
+
+}
+	

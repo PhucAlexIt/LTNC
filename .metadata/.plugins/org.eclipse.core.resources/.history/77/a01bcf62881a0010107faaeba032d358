@@ -1,0 +1,30 @@
+package bai5_1;
+
+import java.time.LocalDate;
+
+public class SalaryEmployee extends Employee {
+	private double annualSalary;
+	private int stockOption;
+	
+	public SalaryEmployee(String name, LocalDate hiredDate, double annualSalary, int stockOption) {
+		super(name, hiredDate);
+		this.annualSalary = annualSalary;
+		this.stockOption = stockOption;
+	}
+
+	public double getAnnualSalary() {
+		return annualSalary;
+	}
+
+	public int getStockOption() {
+		return stockOption;
+	}
+
+	@Override
+	public String toString() {
+		return "SalaryEmployee: " +this.getName() + this.annualSalary ;
+	}
+	
+
+
+}
