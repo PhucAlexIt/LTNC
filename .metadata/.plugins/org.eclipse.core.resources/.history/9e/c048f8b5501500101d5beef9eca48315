@@ -1,8 +1,0 @@
-package bt4_2;
-
-public class Bai4_2 {
-	public static String repalce(String s1, String s2, String s3) {
-		
-	}
-
-}
