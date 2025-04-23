@@ -14,8 +14,12 @@
     <fullyQualifiedTypeName name="bai5_1.Consultant"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="bai5_1.SalaryEmployee"/>
     <fullyQualifiedTypeName name="bai5_1.HourlyEmployee"/>
     <fullyQualifiedTypeName name="bai5_1.Employee"/>
+    <fullyQualifiedTypeName name="bai5_2.ScoreBroad"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="bai5_2.GradeRecord"/>
+    <fullyQualifiedTypeName name="bai5_2.Course"/>
 </qualifiedTypeNameHistroy>
