@@ -20,6 +20,6 @@
     <fullyQualifiedTypeName name="bai5_2.ScoreBroad"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="bai5_2.GradeRecord"/>
     <fullyQualifiedTypeName name="bai5_2.Course"/>
+    <fullyQualifiedTypeName name="bai5_2.GradeRecord"/>
 </qualifiedTypeNameHistroy>

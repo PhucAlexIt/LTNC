@@ -11,6 +11,8 @@ public class School {
 		st1.register(c1);
 		st1.register(c2);
 		st1.register(c3);
+		
+		st1.updateGrade(c1, 5.6);
 
 
 

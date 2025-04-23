@@ -40,8 +40,17 @@ public class ScoreBroad {
 	}
 	//c. Viết phương thức updateGrade(Course course, double grade) để cập nhật điểm số grade cho môn học course của một sinh viên.
 	public void updateGrade(Course course, double grade) {
-		
+		for (GradeRecord gradeRecord : grades) {
+			if(gradeRecord.getCourse().equals(course)) {
+				gradeRecord.setGrade(grade);
+				System.out.println("Kết quả điểm cập nhật: "+course.getNumberCourse()+ " - "+course.getTitleCourse()+" - "+course.getCredit()+ " - "+gradeRecord.getGrade());
+				return;
+				}
+			}
+		System.out.println("Không tìm thấy");
+
+		}
 	}
 	
 	
-}
+
