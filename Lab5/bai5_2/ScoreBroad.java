@@ -36,7 +36,7 @@ public class ScoreBroad {
 	//b. Viết phương thức register(Course course) để cho một sinh viên đăng ký học một course cho trước.
 	public void register(Course course) {
 		grades.add(new GradeRecord(course, 0.0));
-		System.out.println("Bạn đã đăng ký môn học: "+course.getNumberCourse()+ " - "+course.getTitleCourse()+" - "+course.getCredit());
+		System.out.println(this.name+" đã đăng ký môn học: "+course.getNumberCourse()+ " - "+course.getTitleCourse()+" - "+course.getCredit());
 	}
 	//c. Viết phương thức updateGrade(Course course, double grade) để cập nhật điểm số grade cho môn học course của một sinh viên.
 	public void updateGrade(Course course, double grade) {
@@ -50,6 +50,27 @@ public class ScoreBroad {
 		System.out.println("Không tìm thấy");
 
 		}
+	//d. Viết phương thức howManyCredits để tính tổng số tín chỉ trong bảng điểm mà sinh viên đã đạt được.
+	public int howManyCredits() {
+		int sumCredits = 0;
+		for(GradeRecord gradeRecord: grades) {
+			if(gradeRecord.getGrade() >= 4.0) {
+				sumCredits+= gradeRecord.getCourse().getCredit();
+			}
+		}
+		return sumCredits;
+	}
+	//e. 	Viết phương thức gradeAverage để tính điểm trung bình của sinh viên bằng tổng của tích điểm số từng môn với số tín chỉ chia cho tổng số tín chỉ.
+	public double gradeAverage() {
+		double totalGrades = 0.0;
+		int totalCredits = 0;
+		for(GradeRecord gd: grades) {
+			totalGrades += (gd.getGrade() * gd.getCourse().getCredit());
+			totalCredits += gd.getCourse().getCredit();
+		}
+		if(totalCredits == 0) return 0.0;
+		return totalGrades/totalCredits;
+	}
 	}
 	
 	
