@@ -21,6 +21,73 @@ public class LibraryItem {
 	}
 
 
+	public int getLid() {
+		return lid;
+	}
+
+
+	public void setLid(int lid) {
+		this.lid = lid;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getAuthorName() {
+		return authorName;
+	}
+
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+
+
+	public String getPublisher() {
+		return publisher;
+	}
+
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+
+
+	public int getMaxRentedDays() {
+		return maxRentedDays;
+	}
+
+
+	public void setMaxRentedDays(int maxRentedDays) {
+		this.maxRentedDays = maxRentedDays;
+	}
+
+
+	public double getPurchasePrice() {
+		return purchasePrice;
+	}
+
+
+	public void setPurchasePrice(double purchasePrice) {
+		this.purchasePrice = purchasePrice;
+	}
+
+
+	@Override
+	public String toString() {
+		return "LibraryItem [lid=" + lid + ", title=" + title + ", authorName=" + authorName + ", publisher="
+				+ publisher + ", maxRentedDays=" + maxRentedDays + ", purchasePrice=" + purchasePrice + "]";
+	}
+
+
 	
 	
 	

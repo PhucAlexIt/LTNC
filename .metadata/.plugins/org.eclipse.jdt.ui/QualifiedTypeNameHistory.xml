@@ -18,10 +18,12 @@
     <fullyQualifiedTypeName name="bai5_1.HourlyEmployee"/>
     <fullyQualifiedTypeName name="bai5_1.Employee"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="bai5_2.Course"/>
     <fullyQualifiedTypeName name="bai5_2.ScoreBroad"/>
     <fullyQualifiedTypeName name="bai5_2.GradeRecord"/>
     <fullyQualifiedTypeName name="bai5_3.ReferenceBook"/>
     <fullyQualifiedTypeName name="bai5_3.LibraryItem"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="bai5_3.Customers"/>
+    <fullyQualifiedTypeName name="bai5_3.Date"/>
 </qualifiedTypeNameHistroy>
