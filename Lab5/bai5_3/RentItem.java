@@ -31,5 +31,9 @@ public class RentItem {
 		this.rentedDays = rentedDays;
 	}
 	 
-	
+    @Override
+    public String toString() {
+        return "item: " + item.toString() + " - rentedDays: " + this.rentedDays;
+    }
+
 }

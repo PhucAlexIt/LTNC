@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="bai5_1.Consultant"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="bai5_1.SalaryEmployee"/>
     <fullyQualifiedTypeName name="bai5_1.HourlyEmployee"/>
@@ -26,4 +25,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="bai5_3.Customers"/>
     <fullyQualifiedTypeName name="bai5_3.Date"/>
+    <fullyQualifiedTypeName name="org.junit.platform.engine.support.hierarchical.OpenTest4JAwareThrowableCollector"/>
+    <fullyQualifiedTypeName name="bai5_3.RentItem"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>

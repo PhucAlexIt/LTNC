@@ -17,11 +17,25 @@ public class ReferenceBook extends LibraryItem {
 		this.category = category;
 	}
 
+
+	
 	@Override
 	public String toString() {
-		return "ReferenceBook [category=" + category + "]";
+		return "ID: " + getLid() + " - title: " +getTitle() + " - authorName: " + getAuthorName() + " - publisher: " + getPublisher() + "- maxRentedDays: " + getMaxRentedDays()
+		+ " - purchasePrice: " + getPurchasePrice() +" - Category: "+this.category;
 	}
-	
+
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Reference Book";
+	}
+
+	@Override
+	public double calculate() {
+		// TODO Auto-generated method stub
+		return  getPurchasePrice() * 1.2;
+	}
 
 
 

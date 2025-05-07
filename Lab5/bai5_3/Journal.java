@@ -19,10 +19,21 @@ public class Journal extends LibraryItem {
 
 	@Override
 	public String toString() {
-		return "Journal [publishedDate=" + publishedDate + "]";
+		return "ID: " + getLid() + " - title: " +getTitle() + " - authorName: " + getAuthorName() + " - publisher: " + getPublisher() + "- maxRentedDays: " + getMaxRentedDays()
+		+ " - purchasePrice: " + getPurchasePrice() +" - Date: "+this.publishedDate;
 	}
 
-	
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Journal";
+	}
+
+	@Override
+	public double calculate() {
+		// TODO Auto-generated method stub
+		return  getPurchasePrice() * 0.8;
+	}
 	
 
 

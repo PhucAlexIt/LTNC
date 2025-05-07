@@ -40,4 +40,10 @@ public class Customers {
              System.out.println(rent);
          }
     }
+    //d) Viết phương thức borrow(LibraryItem item, int rentDays) để cho một độc  giả mượn một ấn phẩm item với số ngày mượn rentDays cho trước 
+    public void borrow(LibraryItem item, int rentDays) {
+    	RentItem rent = new RentItem(item, rentDays);
+    	addRentItem(rent);
+    }
+
 }

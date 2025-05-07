@@ -1,6 +1,6 @@
 package bai5_3;
 
-public class LibraryItem {
+public abstract class LibraryItem {
 	private int lid;
 	private String title;
 	private String authorName;
@@ -83,13 +83,16 @@ public class LibraryItem {
 
 	@Override
 	public String toString() {
-		return "LibraryItem [lid=" + lid + ", title=" + title + ", authorName=" + authorName + ", publisher="
-				+ publisher + ", maxRentedDays=" + maxRentedDays + ", purchasePrice=" + purchasePrice + "]";
+		return "ID: " + lid + " - title: " + title + " - authorName: " + authorName + " - publisher: " + publisher + "- maxRentedDays: " + maxRentedDays + " - purchasePrice: " + purchasePrice;
 	}
 
+	public abstract String getType();
+	
+	// c) Viết phương thức isAuthor xác định xem một ấn phẩm có phải do một tác giả có tên cho trước viết không.
+	public boolean isAuthor(String otherAuthor) {
+	return this.authorName.equals(otherAuthor);
+	}
+	//e) Tính giá đền một ấn phẩm khi độc giả làm mất ấn phẩm được cho mượn, biết rằng, với: 
+	public abstract double calculate();
 
-	
-	
-	
-	
 }
