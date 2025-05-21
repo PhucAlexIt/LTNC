@@ -35,7 +35,7 @@ public class TextColorChange extends JPanel {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Color color = 	.showDialog(TextColorChange.this, "Change color text", jta.getForeground());
+				Color color = JColorChooser.showDialog(TextColorChange.this, "Change color text", jta.getForeground());
 				jta.setForeground(color);
 				
 			}
